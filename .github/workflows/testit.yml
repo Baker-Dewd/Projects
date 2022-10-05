@@ -1,9 +1,10 @@
-name: GitHub Actions Test vehicle
-on: [push, workflow_dispatch]
+name: GAT
+on: 
+  [push, workflow_dispatch]
 jobs:
   build:
     runs-on: 
-    ubuntu-latest
+      ubuntu-latest
 #      [self-hosted, Dependabot]
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
