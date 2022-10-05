@@ -21,3 +21,5 @@ jobs:
       - name: Host details
         run: uname -a && who && pwd && df -h | head
 
+      - name: show release
+        run: cat /etc/redhat-release
