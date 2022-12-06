@@ -32,6 +32,10 @@ MarkerSwitch    = 26
 HeadlightSwitch = 27 
 
 
+## Spawn all LED's that have positive switch conditions via multi-threading. 
+## Each method has the sequence of blinks with an off at the end and returns 
+## to the main test to set the condition for which lights will be lit again. 
+
 def alloff():
     for led in gpios:
         GPIO.output(led,GPIO.LOW)
