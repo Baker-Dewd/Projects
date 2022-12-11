@@ -2,8 +2,7 @@ name: Cron-Action
 
 on:
   schedule:
-    # Runs "Every 5 minutes to test" 
-    - cron: '*/5 * * * *'
+    - cron: '42 0 * * 1'
 
 jobs:
   build:
