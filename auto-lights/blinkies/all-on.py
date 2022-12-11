@@ -43,38 +43,36 @@ Brakes          = 21,23
 # 5 == Reverse Light
 ######
 
-###### 
-
 
 def alloff():
     for led in gpios:
-        GPIO.output(led,GPIO.LOW)
+        GPIO.output(led, GPIO.LOW)
 
 
 def indicatorsOn():
     for ledMarkerOn in markers:
-        GPIO.output(ledMarkerOn,GPIO.HIGH)
+        GPIO.output(ledMarkerOn, GPIO.HIGH)
 
 def indicatorsOff():
     for ledMarkerOff in markers:
-        GPIO.output(ledMarkerOff,GPIO.LOW)
+        GPIO.output(ledMarkerOff, GPIO.LOW)
 
 def leftTurn():
     for ledLeftOn in leftTurnBulbs:
-        GPIO.output(ledLeftOn,GPIO.HIGH)
+        GPIO.output(ledLeftOn, GPIO.HIGH)
     sleep(.5)
 
     for ledLeftOff in leftTurnBulbs:
-        GPIO.output(ledLeftOff,GPIO.LOW)
+        GPIO.output(ledLeftOff, GPIO.LOW)
     sleep(.5)
 
 def brakesOn():
     for ledBrakesOn in Brakes:
-        GPIO.output(ledBrakesOn,GPIO.HIGH)
+        GPIO.output(ledBrakesOn, GPIO.HIGH)
         
 def brakesOff():
     for ledBrakesOff in Brakes:
-        GPIO.output(ledBrakesOff,GPIO.LOW)
+        GPIO.output(ledBrakesOff, GPIO.LOW)
 
 
 
