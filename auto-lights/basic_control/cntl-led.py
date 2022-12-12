@@ -14,16 +14,16 @@ four = 22,20,23,19
 
 def displayled(gpios,display):
     for led in gpios:
-        GPIO.setup(led,GPIO.OUT)
+        GPIO.setup(led, GPIO.OUT)
 
     for led in gpios:
-        GPIO.output(led,GPIO.LOW)
+        GPIO.output(led, GPIO.LOW)
 
     for led in display:
-        GPIO.setup(led,GPIO.OUT)
+        GPIO.setup(led, GPIO.OUT)
 
     for led in display:
-        GPIO.output(led,GPIO.HIGH)
+        GPIO.output(led, GPIO.HIGH)
 
 
 displayled(gpios,four) 
